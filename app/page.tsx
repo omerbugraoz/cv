@@ -1,5 +1,5 @@
 import ContactButton from "./components/ContactButton/ContactButton";
-import { ME as data } from "@/data/me";
+import { ME as data } from "../data/me";
 
 export default function Home() {
   return (

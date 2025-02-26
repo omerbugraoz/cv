@@ -1,6 +1,6 @@
-import { getContactIcon } from "@/util/getContactIcon";
+import { getContactIcon } from "../../utils/getContactIcon";
 import { IContactButton } from "./ContactButton.type";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../components/ui/button";
 
 const ContactButton: React.FC<IContactButton> = ({ name, href }) => {
   const Icon = getContactIcon(name);
