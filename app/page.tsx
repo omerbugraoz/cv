@@ -1,5 +1,6 @@
 import ContactButton from "./components/ContactButton/ContactButton";
 import { ME as data } from "../data/me";
+import ProjectCard from "./components/ProjectCard/ProjectCard";
 
 export default function Home() {
   return (
@@ -79,24 +80,7 @@ export default function Home() {
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="flex flex-col md:grid md:grid-cols-3 md:gap-6 gap-2">
             {data.workProjectExperience.map((project) => (
-              <a
-                className="group flex flex-col w-full md:h-48 justify-between md:rounded-lg md:border pb-2 md:p-3 cursor-pointer sm:border-b border-b"
-                key={project.project}
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`${project.project} institution website`}
-              >
-                <div className="flex justify-between">
-                  <p className="group-hover:underline">{project.project}</p>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    {project.company}
-                  </p>
-                </div>
-                <p className="text-sm text-gray-600 mt-2">
-                  {project.description}
-                </p>
-              </a>
+              <ProjectCard key={project.project} {...project} />
             ))}
           </div>
         </section>
