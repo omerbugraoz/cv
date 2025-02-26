@@ -51,30 +51,45 @@ export const ME = {
   workProjectExperience: [
     {
       position: "Frontend Developer",
-      company: "Dogus Otomotiv / BREW",
-      location: "İstanbul, Türkiye",
-      period: "2023 – Present",
+      project: "VillaSepeti",
+      company: "Brew",
+      // url: "https://www.villasepeti.com",
+      description:
+        " Villa Sepeti realizes the reservation and marketing of thousands of villas in Turkey and abroad.",
+      responsibilities: [
+        "Developed a dynamic and interactive frontend using React and Next.js",
+        "Used GraphQL for efficient data querying and manipulation between frontend and backend",
+        "Used Zustand for state management and data flow",
+      ],
+      technologies: ["React", "Next.js", "Zustand", "Hasura", "GraphQL"],
+    },
+    {
+      position: "Frontend Developer",
+      project: "Sensat",
+      company: "Brew",
+      url: "https://www.sensat.com",
       description:
         "Second-hand vehicles buying and selling - Sensat.com - Web platform that relates buying and selling cars.",
       responsibilities: [
         "Developed a dynamic and interactive frontend using Vue and Nuxt.js",
-        "Leveraged Pinia for effective and sustainable state management in the application.",
-        "Employed Bitbucket for our development source control management and synchronized with Dogus Otomotiv's Azure accounts to deliver code to their team.",
+        "Used LESS CSS pre-processor for creating modular and maintainable stylesheets with variables and mixins",
         "Used Storybook to develop, test, and document reusable components, making our codebase modular and easy to maintain",
       ],
-      technologies: ["Vue.js", "Nuxt.js", "Pinia", "Bitbucket", "Storybook"],
+      technologies: ["Vue.js", "Nuxt.js", "LESS", "Storybook"],
     },
     {
       position: "Frontend Developer",
-      company: "Maxitech / BREW",
-      location: "San Francisco, United States",
+      project: "Maxitech",
+      url: "https://maxitech.com/",
+      company: "Brew",
       description:
-        "Finance Web App - For Lunafı, a fınancial suit tailored for self-employed professionals in the United States, we developed a desktop application to complement their existing mobile app. Lunafi empowers users to identify and monitor tax deductions, estimate tax liabilities and savings, manage invoices, and obtain insights into both business and personal finances. The platform leverages automated tasks and AI-driven recommendations to enhance fınancial management and decision-making.",
+        "Maxitech is offering capital, market validation, and access to a global network of enterprise clients for rapid growth.",
       websiteUrl: "https://maxitech.com/",
       responsibilities: [
         "Developed a web application using React, Remix.js.",
         "Implemented TailwindCss for styling",
-        "Utilized Storybook for developing, testing, and documenting reusable component",
+        "Utilized Storybook for developing, testing, and documenting reusable components",
+        "Integrated Framer Motion for smooth animations and transitions",
       ],
       technologies: [
         "React",
@@ -86,17 +101,31 @@ export const ME = {
     },
     {
       position: "Frontend Developer",
-      company: "Dogus Otomotiv / BREW",
-      location: "İstanbul, Türkiye",
-      period: "2022 – 2023",
+      project: "DOD",
+      company: "Brew",
+      url: "https://dod.com.tr/",
       description:
         "Second-hand vehicles buying and selling - DOD - Web platform that relates buying and selling cars.",
       responsibilities: [
-        "Developed a dynamic and interactive frontend using Vue.js and Nuxt.js",
+        "Developed a dynamic and interactive frontend using Vue and Nuxt.js",
         "Styled based on Ant Design",
         "Used Storybook to develop, test, and document reusable components, making our codebase modular and easy to maintain",
       ],
       technologies: ["Vue.js", "Nuxt.js", "Ant Design", "Storybook"],
+    },
+    {
+      position: "Frontend Developer",
+      project: "Mobilet",
+      company: "Brew",
+      url: "https://www.mobilet.com",
+      description:
+        "Mobilet is a social discovery and sharing platform that redefines the ticket buying experience, including before and after.",
+      responsibilities: [
+        "Developed a dynamic and interactive frontend using React and Next.js",
+        "Used GraphQL for efficient data querying and manipulation between frontend and backend",
+        "Used Redux Toolkit for state management and data flow",
+      ],
+      technologies: ["React", "Next.js", "Redux Toolkit", "Hasura", "GraphQL"],
     },
   ],
   education: [
@@ -108,7 +137,7 @@ export const ME = {
         end: "2023",
       },
       location: "İzmir, Türkiye",
-      website: "https://iyte.edu.tr/",
+      website: "https://en.iyte.edu.tr/",
     },
   ],
   skills: [
@@ -129,7 +158,7 @@ export const ME = {
     "Node.js",
     "Fastify",
     "Zustand",
-    "DirectusCMS",
+    "Directus CMS",
   ],
   languages: [
     {

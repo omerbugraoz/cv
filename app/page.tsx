@@ -52,9 +52,9 @@ export default function Home() {
         </section>
         <section className="flex flex-col gap-2">
           <h2 className="text-xl font-bold">Education</h2>
-          <div>
+          <div className="flex flex-col gap-1">
             {data.education.map((edu) => (
-              <div>
+              <div key={edu.institution}>
                 <div className="flex justify-between">
                   <a
                     className="hover:underline"
@@ -72,6 +72,29 @@ export default function Home() {
                 </div>
                 <p className="text-sm text-gray-600 mt-1">{edu.degree}</p>
               </div>
+            ))}
+          </div>
+        </section>
+        <section className="flex flex-col gap-2">
+          <h2 className="text-xl font-bold">Projects</h2>
+          <div className="grid grid-cols-3 gap-6">
+            {data.workProjectExperience.map((project) => (
+              <a
+                className="group flex flex-col h-48 justify-between rounded-lg border p-3 cursor-pointer"
+                key={project.project}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${project.project} institution website`}
+              >
+                <div className="flex justify-between">
+                  <p className="group-hover:underline">{project.project}</p>
+                  <p className="text-gray-600 dark:text-gray-400">
+                    {project.company}
+                  </p>
+                </div>
+                <p className="text-sm text-gray-600">{project.description}</p>
+              </a>
             ))}
           </div>
         </section>
