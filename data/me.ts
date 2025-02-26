@@ -61,7 +61,14 @@ export const ME = {
         "Used GraphQL for efficient data querying and manipulation between frontend and backend",
         "Used Zustand for state management and data flow",
       ],
-      technologies: ["React", "Next.js", "Zustand", "Hasura", "GraphQL"],
+      technologies: [
+        "React",
+        "Next.js",
+        "Zustand",
+        "Hasura",
+        "GraphQL",
+        "Directuc",
+      ],
     },
     {
       position: "Frontend Developer",
@@ -75,7 +82,7 @@ export const ME = {
         "Used LESS CSS pre-processor for creating modular and maintainable stylesheets with variables and mixins",
         "Used Storybook to develop, test, and document reusable components, making our codebase modular and easy to maintain",
       ],
-      technologies: ["Vue.js", "Nuxt.js", "LESS", "Storybook"],
+      technologies: ["Vue", "Nuxt.js", "LESS", "Storybook"],
     },
     {
       position: "Frontend Developer",
@@ -83,11 +90,11 @@ export const ME = {
       url: "https://maxitech.com/",
       company: "Brew",
       description:
-        "Maxitech is offering capital, market validation, and access to a global network of enterprise clients for rapid growth.",
+        "Maxitech offers capital and market validation to help enterprise clients grow rapidly.",
       websiteUrl: "https://maxitech.com/",
       responsibilities: [
         "Developed a web application using React, Remix.js.",
-        "Implemented TailwindCss for styling",
+        "Implemented Tailwind for styling",
         "Utilized Storybook for developing, testing, and documenting reusable components",
         "Integrated Framer Motion for smooth animations and transitions",
       ],
@@ -105,13 +112,13 @@ export const ME = {
       company: "Brew",
       url: "https://dod.com.tr/",
       description:
-        "Second-hand vehicles buying and selling - DOD - Web platform that relates buying and selling cars.",
+        "Second-hand vehicles buying and selling platform that relates buying and selling cars.",
       responsibilities: [
         "Developed a dynamic and interactive frontend using Vue and Nuxt.js",
         "Styled based on Ant Design",
         "Used Storybook to develop, test, and document reusable components, making our codebase modular and easy to maintain",
       ],
-      technologies: ["Vue.js", "Nuxt.js", "Ant Design", "Storybook"],
+      technologies: ["Vue", "Nuxt.js", "Ant Design", "Storybook", "Less"],
     },
     {
       position: "Frontend Developer",
@@ -119,7 +126,7 @@ export const ME = {
       company: "Brew",
       url: "https://www.mobilet.com",
       description:
-        "Mobilet is a social discovery and sharing platform that redefines the ticket buying experience, including before and after.",
+        "Mobilet is a social discovery and sharing platform that redefines the ticket buying experience.",
       responsibilities: [
         "Developed a dynamic and interactive frontend using React and Next.js",
         "Used GraphQL for efficient data querying and manipulation between frontend and backend",

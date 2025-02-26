@@ -1,4 +1,5 @@
 import ContactButton from "./components/ContactButton/ContactButton";
+import { Badge } from "../components/ui/badge";
 import { ME as data } from "../data/me";
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
             ))}
           </div>
         </section>
+
         <section className="flex flex-col gap-2">
           <h2 className="text-xl font-bold">Education</h2>
           <div className="flex flex-col gap-1">
@@ -80,7 +82,7 @@ export default function Home() {
           <div className="flex flex-col md:grid md:grid-cols-3 md:gap-6 gap-2">
             {data.workProjectExperience.map((project) => (
               <a
-                className="group flex flex-col w-full md:h-48 justify-between md:rounded-lg md:border pb-2 md:p-3 cursor-pointer sm:border-b border-b"
+                className="group flex flex-col w-full md:h-60 justify-between md:rounded-lg md:border pb-2 md:p-3 cursor-pointer sm:border-b border-b"
                 key={project.project}
                 href={project.url}
                 target="_blank"
@@ -93,9 +95,16 @@ export default function Home() {
                     {project.company}
                   </p>
                 </div>
-                <p className="text-sm text-gray-600 mt-2">
+                <p className="text-sm text-gray-600 my-2">
                   {project.description}
                 </p>
+                <div className="flex flex-wrap gap-1 sm:flex group-hover:flex md:hidden md:group-hover:flex">
+                  {project.technologies.map((tech) => (
+                    <Badge key={tech} variant="outline" className="">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
               </a>
             ))}
           </div>
