@@ -3,7 +3,7 @@ import { ME as data } from "../data/me";
 
 export default function Home() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16">
+    <main className="container relative mx-auto scroll-my-12 overflow-auto print:p-11 md:p-16">
       <div className="flex flex-col gap-8 max-w-3xl mx-auto p-4 bg-white dark:bg-gray-950">
         <section className="flex flex-col gap-2">
           <h1 className="text-2xl font-bold">{data.name}</h1>
@@ -77,10 +77,10 @@ export default function Home() {
         </section>
         <section className="flex flex-col gap-2">
           <h2 className="text-xl font-bold">Projects</h2>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="flex flex-col md:grid md:grid-cols-3 md:gap-6 gap-2">
             {data.workProjectExperience.map((project) => (
               <a
-                className="group flex flex-col h-48 justify-between rounded-lg border p-3 cursor-pointer"
+                className="group flex flex-col w-full md:h-48 justify-between md:rounded-lg md:border pb-2 md:p-3 cursor-pointer sm:border-b border-b"
                 key={project.project}
                 href={project.url}
                 target="_blank"
@@ -93,7 +93,9 @@ export default function Home() {
                     {project.company}
                   </p>
                 </div>
-                <p className="text-sm text-gray-600">{project.description}</p>
+                <p className="text-sm text-gray-600 mt-2">
+                  {project.description}
+                </p>
               </a>
             ))}
           </div>
