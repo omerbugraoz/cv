@@ -1,11 +1,15 @@
 import ContactButton from "./components/ContactButton/ContactButton";
 import { Badge } from "../components/ui/badge";
 import { ME as data } from "../data/me";
+import { ThemeToggle } from "./components/ThemeToggle/ThemeToggle";
 
 export default function Home() {
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto print:p-11 md:p-16">
       <div className="flex flex-col gap-8 max-w-3xl mx-auto p-4 bg-white dark:bg-gray-950">
+        <div className="absolute top-4 right-4">
+          <ThemeToggle />
+        </div>
         <section className="flex flex-col gap-2">
           <h1 className="text-2xl font-bold">{data.name}</h1>
           <p className="text-gray-600 dark:text-gray-400">{data.summary}</p>
