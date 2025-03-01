@@ -8,18 +8,22 @@ export const ME = {
     // },
     {
       name: "email",
+      value: "oomerbugraoz@gmail.com",
       href: "mailto:oomerbugraoz@gmail.com",
     },
     {
       name: "phone",
+      value: "+905067907173",
       href: "tel:+905067907173",
     },
     {
       name: "linkedin",
+      value: "linkedin.com/in/omerbugraoz/",
       href: "https://www.linkedin.com/in/omerbugraoz/",
     },
     {
       name: "github",
+      value: "github.com/omerbugraoz",
       href: "https://github.com/omerbugraoz",
     },
   ],
@@ -29,7 +33,7 @@ export const ME = {
   },
   summary:
     "Experienced Frontend Developer with expertise in Vue, React, Next.js and Nuxt.js. Skilled in building dynamic, interactive web applications with a focus on modularity, maintainability, and user experience.",
-  workExperince: [
+  workExperience: [
     {
       key: "brew",
       position: "Frontend Developer",
