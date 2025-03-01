@@ -78,6 +78,20 @@ export default function Home() {
           </div>
         </section>
         <section className="flex flex-col gap-2">
+          <h2 className="text-xl font-bold">Skills</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+            {data.skills.map((skill) => (
+              <Badge
+                key={skill}
+                variant="outline"
+                className="text-sm text-gray-600 transition-all duration-200 hover:bg-gray-100 hover:shadow-md hover:scale-105"
+              >
+                {skill}
+              </Badge>
+            ))}
+          </div>
+        </section>
+        <section className="flex flex-col gap-2">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="flex flex-col md:grid md:grid-cols-3 md:gap-6 gap-2">
             {data.workProjectExperience.map((project) => (
@@ -98,9 +112,9 @@ export default function Home() {
                 <p className="text-sm text-gray-600 my-2">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-1 sm:flex group-hover:flex md:hidden md:group-hover:flex">
+                <div className="flex flex-wrap gap-1 sm:flex group-hover:flex md:hidden md:group-hover:flex transform transition-transform duration-1000 group-hover:-translate-y-2">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="outline" className="">
+                    <Badge key={tech} variant="outline">
                       {tech}
                     </Badge>
                   ))}
