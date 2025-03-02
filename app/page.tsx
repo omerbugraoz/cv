@@ -16,7 +16,7 @@ const MainContent = () => (
         <Button
           variant="ghost"
           size="icon"
-          className="cursor-pointer"
+          className="cursor-pointer hidden md:block"
           onClick={() => window.print()}
         >
           <Download />
