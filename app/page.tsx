@@ -11,16 +11,16 @@ import { Button } from "@/components/ui/button";
 const MainContent = () => (
   <main className="container relative mx-auto overflow-auto md:p-16 print:hidden">
     <div className="flex flex-col gap-8 max-w-3xl mx-auto p-3 md:p-6">
-      <div className="flex absolute md:fixed top-3 right-4">
+      <div className="flex gap-1 absolute md:fixed top-3 right-4">
         <ThemeToggle />
         <Button
           variant="ghost"
           size="icon"
-          className="cursor-pointer hidden md:block"
+          className="cursor-pointer hidden md:flex"
           onClick={() => window.print()}
         >
           <Download />
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">Download resume</span>
         </Button>
       </div>
       <section className="flex flex-col gap-2">
