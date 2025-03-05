@@ -138,6 +138,30 @@ export const ME = {
       ],
       technologies: ["React", "Next.js", "Redux Toolkit", "Hasura", "GraphQL"],
     },
+    {
+      position: "Fullstack Developer",
+      project: "Kunduz",
+      company: "Freelance",
+      description:
+        "Kunduz is internal drawing management tool for Orhan Sanayi.",
+      responsibilities: [
+        "Implement and maintain global state management for the frontend, ensuring efficient and scalable state handling across React components",
+        "Set up and configure a high-performance Node.js server using Fastify to handle HTTP requests and responses, focusing on speed and low overhead",
+        "Design database schemas in MySQL, write optimized SQL queries, and use Drizzle as an ORM to simplify database interactions and ensure data integrity",
+        "Organize multiple packages within a monorepo, handle dependencies, and use Turbo to streamline build, test, and deployment processes for efficient project management.",
+      ],
+      technologies: [
+        "React",
+        "Next.js",
+        "Zustand",
+        "Fastify",
+        "RESTful",
+        "Drizzle",
+        "TypeScript",
+        "MySQL",
+        "Turbo Monorepo",
+      ],
+    },
   ],
   education: [
     {

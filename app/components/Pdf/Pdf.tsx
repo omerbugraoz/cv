@@ -94,6 +94,21 @@ const PDFResume = () => {
         </div>
       </section>
 
+      {/* Skills */}
+      <section className="mb-5">
+        <h2 className="text-2xl font-bold mb-4 border-b pb-2">Skills</h2>
+        <div className="flex flex-wrap gap-2">
+          {data.skills.map((skill) => (
+            <span
+              key={skill}
+              className="bg-gray-100 px-2 py-1 rounded-md text-gray-700 text-sm"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+
       {/* Education */}
       <section className="mb-5">
         <h2 className="text-2xl font-bold mb-4 border-b pb-2">Education</h2>
@@ -119,21 +134,6 @@ const PDFResume = () => {
             </div>
           </div>
         ))}
-      </section>
-
-      {/* Skills */}
-      <section className="mb-5">
-        <h2 className="text-2xl font-bold mb-4 border-b pb-2">Skills</h2>
-        <div className="flex flex-wrap gap-2">
-          {data.skills.map((skill) => (
-            <span
-              key={skill}
-              className="bg-gray-100 px-2 py-1 rounded-md text-gray-700 text-sm"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
       </section>
 
       {/* Languages */}
