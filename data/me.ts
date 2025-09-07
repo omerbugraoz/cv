@@ -35,6 +35,22 @@ export const ME = {
     "Experienced Frontend Developer with expertise in Vue, React, Next.js and Nuxt.js. Skilled in building dynamic, interactive web applications with a focus on modularity, maintainability, and user experience.",
   workExperience: [
     {
+      key: 'aegean',
+      position: 'Frontend Developer',
+      company: 'AegeanLabs',
+      period: {
+        start: "2025",
+        end: ""
+      },
+      website: "https://www.aegeanlabs.com/",
+      description:
+        "At AegeanLabs, we stand out from the crowd with our innovative approach to financial technologies.",
+      responsibilities: [
+        "Developed and maintained real time data monitoring app using WebSocket and Vue.js",
+        "Collaborated with designers and backend developers to create seamless user experiences.",
+      ],
+    },
+    {
       key: "brew",
       position: "Frontend Developer",
       company: "Brew Interactive",
@@ -53,6 +69,16 @@ export const ME = {
     },
   ],
   workProjectExperience: [
+    {
+      position: "Frontend Developer",
+      project: "ReportLab",
+      company: "AegeanLabs",
+      description: "ReportLab is a powerful tool for monitoring real-time data streams.",
+      responsibilities: [
+        "Developed and maintained real-time data monitoring app using WebSocket and Vue.js",
+      ],
+      technologies: ["Vue.js", "WebSocket", "Vite", "Pinia"],
+    },
     {
       position: "Frontend Developer",
       project: "VillaSepeti",
@@ -190,6 +216,8 @@ export const ME = {
     "Nuxt.js",
     "Next.js",
     "Remix.js",
+    "Storybook",
+    "Vite",
     "Git",
     "Jira",
     "Bitbucket",
@@ -202,6 +230,13 @@ export const ME = {
     "Directus CMS",
     "Drizzle",
     "MySQL",
+    "Prettier",
+    "Webpack",
+    "AntDesign",
+    "PrimeVue",
+    "HeroUI",
+    "Pinia",
+    "Websocket"
   ],
   languages: [
     {
