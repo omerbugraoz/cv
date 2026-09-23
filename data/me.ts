@@ -49,8 +49,6 @@ export const ME = {
         "Built and maintained real-time financial monitoring and reporting applications using Vue 3, React, WebSocket, and Spring Boot",
         "Designed and evolved PostgreSQL schemas with JPA, including migrations, constraints, and relational integrity across alerting and user management modules",
         "Implemented object-level authorization in Spring Boot to prevent IDOR/BOLA vulnerabilities",
-        "Deployed and operated client environments on AWS (EC2, RDS, ALB), configuring Apache reverse proxies, WebSocket tunneling, and SPA routing",
-        "Built and deployed the company website on Vercel with transactional email integration (Resend, SPF/DKIM DNS setup)",
         "Collaborated with designers and backend developers within a development → QA → production branching workflow with code reviews",
       ],
     },
