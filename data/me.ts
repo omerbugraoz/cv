@@ -1,6 +1,6 @@
 export const ME = {
   name: "Ömer Buğra ÖZ",
-  title: "Frontend Developer",
+  title: "Fullstack Developer",
   contact: [
     // {
     //   name: "website",
@@ -28,8 +28,33 @@ export const ME = {
     nationality: "Turkish",
   },
   summary:
+<<<<<<< Updated upstream
     "Experienced Frontend Developer with expertise in Vue, React, Next.js and Nuxt.js. Skilled in building dynamic, interactive web applications with a focus on modularity, maintainability, and user experience.",
   workExperince: [
+=======
+    "Fullstack Developer with a strong frontend background in Vue, React, Next.js and Nuxt.js, extending into Spring Boot, PostgreSQL and AWS. Experienced in building real-time, data-intensive web applications with a focus on modularity, maintainability, and user experience.",
+  workExperience: [
+    {
+      key: 'aegean',
+      position: 'Fullstack Developer',
+      company: 'AegeanLabs',
+      period: {
+        start: "2025",
+        end: ""
+      },
+      website: "https://www.aegeanlabs.com/",
+      description:
+        "Fullstack development of real-time financial platforms, from Vue/React frontends to Spring Boot backends and AWS infrastructure.",
+      responsibilities: [
+        "Built and maintained real-time financial monitoring and reporting applications using Vue 3, React, WebSocket, and Spring Boot",
+        "Designed and evolved PostgreSQL schemas with JPA, including migrations, constraints, and relational integrity across alerting and user management modules",
+        "Implemented object-level authorization in Spring Boot to prevent IDOR/BOLA vulnerabilities",
+        "Deployed and operated client environments on AWS (EC2, RDS, ALB), configuring Apache reverse proxies, WebSocket tunneling, and SPA routing",
+        "Built and deployed the company website on Vercel with transactional email integration (Resend, SPF/DKIM DNS setup)",
+        "Collaborated with designers and backend developers within a development → QA → production branching workflow with code reviews",
+      ],
+    },
+>>>>>>> Stashed changes
     {
       key: "brew",
       position: "Frontend Developer",
@@ -50,10 +75,44 @@ export const ME = {
   ],
   workProjectExperience: [
     {
+<<<<<<< Updated upstream
+=======
+      position: "Fullstack Developer",
+      project: "Echo",
+      company: "AegeanLabs",
+      description:
+        "Multi-tenant, real-time financial reporting and monitoring platform for trading clients, covering PnL tracking, commission analysis, and rule-based alerting.",
+      responsibilities: [
+        "Developed real-time PnL and trading dashboards streaming live data over WebSocket, with token-based socket authentication",
+        "Built REST endpoints and data models in Spring Boot with JPA on PostgreSQL (AWS RDS)",
+        "Designed the alert rules/conditions schema and managed database migrations with proper foreign key ordering",
+        "Implemented object-level authorization to prevent IDOR/BOLA vulnerabilities",
+        "Architected multi-tenant deployment with isolated per-client environments and databases",
+        "Implemented path-based routing under a single domain using AWS ALB, migrating DNS from direct IPs to the load balancer",
+        "Configured production servers with Apache reverse proxy, WebSocket tunneling, SPA routing, and Windows service management (NSSM)",
+        "Set up multi-mode Vite builds and environment management to ship separate product variants from one codebase",
+      ],
+      technologies: [
+        "Vue 3",
+        "React",
+        "TypeScript",
+        "Pinia",
+        "PrimeVue",
+        "Vite",
+        "PWA",
+        "WebSocket",
+        "Spring Boot",
+        "JPA",
+        "PostgreSQL",
+        "AWS",
+      ],
+    },
+    {
+>>>>>>> Stashed changes
       position: "Frontend Developer",
       project: "VillaSepeti",
       company: "Brew",
-      // url: "https://www.villasepeti.com",
+      url: "https://www.villasepeti.com",
       description:
         " Villa Sepeti realizes the reservation and marketing of thousands of villas in Turkey and abroad.",
       responsibilities: [
@@ -174,6 +233,23 @@ export const ME = {
     "Directus CMS",
     "Drizzle",
     "MySQL",
+<<<<<<< Updated upstream
+=======
+    "Prettier",
+    "Webpack",
+    "AntDesign",
+    "PrimeVue",
+    "HeroUI",
+    "Pinia",
+    "Websocket",
+    "Java",
+    "Spring Boot",
+    "JPA / Hibernate",
+    "PostgreSQL",
+    "AWS (EC2, RDS, ALB)",
+    "Apache",
+    "Vercel"
+>>>>>>> Stashed changes
   ],
   languages: [
     {
