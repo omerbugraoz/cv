@@ -11,16 +11,18 @@ const PDFResume = () => {
         <p className="mb-4">{data.summary}</p>
 
         <div className="grid grid-cols-2 gap-2 text-sm">
-          {data.contact.map((item, index: number) => (
-            <a
-              key={item.name}
-              href={item.href}
-              target="_blank"
-              className={`hover:underline ${index % 2 === 1 ? "text-right" : ""}`}
-            >
-              {item.value}
-            </a>
-          ))}
+          {data.contact
+            .filter((item) => item.name !== "website")
+            .map((item, index: number) => (
+              <a
+                key={item.name}
+                href={item.href}
+                target="_blank"
+                className={`hover:underline ${index % 2 === 1 ? "text-right" : ""}`}
+              >
+                {item.value}
+              </a>
+            ))}
         </div>
       </header>
 

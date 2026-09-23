@@ -45,7 +45,7 @@ const MainContent = () => (
             <div key={work.key}>
               <div className="flex justify-between">
                 <a
-                  className="hover:underline dark:text-blue-300"
+                  className="hover:underline text-blue-700 dark:text-blue-300"
                   href={work.website}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -80,7 +80,7 @@ const MainContent = () => (
             <div key={edu.institution}>
               <div className="flex justify-between">
                 <a
-                  className="hover:underline dark:text-blue-300"
+                  className="hover:underline text-blue-700 dark:text-blue-300"
                   href={edu.website}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -116,7 +116,7 @@ const MainContent = () => (
       </section>
       <section className="flex flex-col gap-2">
         <h2 className="text-xl font-bold dark:text-gray-100">Projects</h2>
-        <div className="flex flex-col md:grid md:grid-cols-3 md:gap-6 gap-2">
+        <div className="flex flex-col md:grid md:grid-cols-2 md:gap-6 gap-2">
           {data.workProjectExperience.map((project) => (
             <a
               className="group flex flex-col w-full md:h-60 justify-between md:rounded-xl md:border dark:md:border-gray-700 pb-2 md:p-3 cursor-pointer sm:border-b border-b dark:border-gray-700"
@@ -127,7 +127,7 @@ const MainContent = () => (
               aria-label={`${project.project} institution website`}
             >
               <div className="flex justify-between">
-                <p className="group-hover:underline dark:text-blue-300">
+                <p className="group-hover:underline text-blue-700 dark:text-blue-300">
                   {project.project}
                 </p>
                 <p className="text-gray-600 dark:text-gray-300">

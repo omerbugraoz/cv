@@ -1,11 +1,11 @@
 export const ME = {
   name: "Ömer Buğra ÖZ",
-  title: "Frontend Developer",
+  title: "Fullstack Developer",
   contact: [
-    // {
-    //   name: "website",
-    //   href: "",
-    // },
+    {
+      name: "website",
+      href: "https://omerbugra.dev",
+    },
     {
       name: "email",
       value: "oomerbugraoz@gmail.com",
@@ -32,11 +32,11 @@ export const ME = {
     nationality: "Turkish",
   },
   summary:
-    "Experienced Frontend Developer with expertise in Vue, React, Next.js and Nuxt.js. Skilled in building dynamic, interactive web applications with a focus on modularity, maintainability, and user experience.",
+    "Fullstack Developer with a strong frontend background in Vue, React, Next.js and Nuxt.js, extending into Spring Boot, PostgreSQL and AWS. Experienced in building real-time, data-intensive web applications with a focus on modularity, maintainability, and user experience.",
   workExperience: [
     {
       key: 'aegean',
-      position: 'Frontend Developer',
+      position: 'Fullstack Developer',
       company: 'AegeanLabs',
       period: {
         start: "2025",
@@ -44,10 +44,14 @@ export const ME = {
       },
       website: "https://www.aegeanlabs.com/",
       description:
-        "At AegeanLabs, we stand out from the crowd with our innovative approach to financial technologies.",
+        "Fullstack development of real-time financial platforms, from Vue/React frontends to Spring Boot backends and AWS infrastructure.",
       responsibilities: [
-        "Developed and maintained real time data monitoring app using WebSocket and Vue.js",
-        "Collaborated with designers and backend developers to create seamless user experiences.",
+        "Built and maintained real-time financial monitoring and reporting applications using Vue 3, React, WebSocket, and Spring Boot",
+        "Designed and evolved PostgreSQL schemas with JPA, including migrations, constraints, and relational integrity across alerting and user management modules",
+        "Implemented object-level authorization in Spring Boot to prevent IDOR/BOLA vulnerabilities",
+        "Deployed and operated client environments on AWS (EC2, RDS, ALB), configuring Apache reverse proxies, WebSocket tunneling, and SPA routing",
+        "Built and deployed the company website on Vercel with transactional email integration (Resend, SPF/DKIM DNS setup)",
+        "Collaborated with designers and backend developers within a development → QA → production branching workflow with code reviews",
       ],
     },
     {
@@ -60,36 +64,58 @@ export const ME = {
       },
       website: "https://brewww.com/",
       description:
-        "Over 4 years, I made significant contributions to the development of multiple large-scale projects",
+        "Frontend development for large-scale client products across ticketing, automotive, travel and fintech over 4 years.",
       responsibilities: [
-        "Followed the innovations in frontend technologies, integrated them into projects and improved the user experience.",
-        "Collaborated with cross-functional teams (designers, backend developers, QA) to design and implement features that improve the user experience.",
-        "Provided feedback to my teammates by conducting code reviews and supported a culture of continuous improvement.",
+        "Delivered frontends for multiple large-scale client products (Mobilet, Sensat, DOD, Maxitech, Villa Sepeti) using React, Next.js, Remix, Vue and Nuxt.js",
+        "Built and documented reusable UI components with Storybook to keep codebases modular and consistent",
+        "Integrated GraphQL (Hasura) and headless CMS (Directus) backends into frontend applications",
+        "Evaluated and adopted new frontend tools and patterns (Remix, Zustand, Redux Toolkit, Framer Motion) across projects",
+        "Collaborated with designers, backend developers and QA to design and ship features end to end",
+        "Conducted code reviews and supported a culture of continuous improvement within the team",
       ],
     },
   ],
   workProjectExperience: [
     {
-      position: "Frontend Developer",
-      project: "ReportLab",
+      position: "Fullstack Developer",
+      project: "Echo",
       company: "AegeanLabs",
-      description: "ReportLab is a powerful tool for monitoring real-time data streams.",
+      description:
+        "Multi-tenant, real-time financial reporting and monitoring platform for trading clients, covering PnL tracking, commission analysis, and rule-based alerting.",
       responsibilities: [
-        "Developed and maintained real-time data monitoring app using WebSocket and Vue.js",
+        "Developed real-time PnL and trading dashboards streaming live data over WebSocket, with token-based socket authentication",
+        "Built REST endpoints and data models in Spring Boot with JPA on PostgreSQL (AWS RDS)",
+        "Designed the alert rules/conditions schema and managed database migrations with proper foreign key ordering",
+        "Architected multi-tenant deployment with isolated per-client environments and databases",
+        "Set up multi-mode Vite builds and environment management to ship separate product variants from one codebase",
       ],
-      technologies: ["Vue.js", "WebSocket", "Vite", "Pinia"],
+      technologies: [
+        "Vue 3",
+        "React",
+        "TypeScript",
+        "Pinia",
+        "PrimeVue",
+        "Vite",
+        "PWA",
+        "WebSocket",
+        "Spring Boot",
+        "JPA",
+        "PostgreSQL",
+        "AWS",
+      ],
     },
     {
       position: "Frontend Developer",
       project: "VillaSepeti",
       company: "Brew",
-      // url: "https://www.villasepeti.com",
+      url: "https://www.villasepeti.com",
       description:
-        " Villa Sepeti realizes the reservation and marketing of thousands of villas in Turkey and abroad.",
+        "Villa rental platform handling the listing, marketing and reservation of thousands of villas in Turkey and abroad.",
       responsibilities: [
-        "Developed a dynamic and interactive frontend using React and Next.js",
-        "Used GraphQL for efficient data querying and manipulation between frontend and backend",
-        "Used Zustand for state management and data flow",
+        "Developed the platform's frontend with React and Next.js",
+        "Consumed Hasura GraphQL APIs for querying and mutating listing and reservation data",
+        "Managed client-side state and data flow with Zustand",
+        "Integrated Directus CMS so content teams could manage pages and listings without developer involvement",
       ],
       technologies: [
         "React",
@@ -106,11 +132,11 @@ export const ME = {
       company: "Brew",
       url: "https://www.sensat.com",
       description:
-        "Second-hand vehicles buying and selling - Sensat.com - Web platform that relates buying and selling cars.",
+        "Online marketplace connecting buyers and sellers of second-hand cars.",
       responsibilities: [
-        "Developed a dynamic and interactive frontend using Vue and Nuxt.js",
-        "Used LESS CSS pre-processor for creating modular and maintainable stylesheets with variables and mixins",
-        "Used Storybook to develop, test, and document reusable components, making our codebase modular and easy to maintain",
+        "Developed the marketplace frontend with Vue and Nuxt.js",
+        "Structured modular, maintainable stylesheets with LESS variables and mixins",
+        "Built, tested and documented reusable components in Storybook",
       ],
       technologies: ["Vue", "Nuxt.js", "LESS", "Storybook"],
     },
@@ -120,13 +146,13 @@ export const ME = {
       url: "https://maxitech.com/",
       company: "Brew",
       description:
-        "Maxitech offers capital and market validation to help enterprise clients grow rapidly.",
+        "Platform offering capital and market validation to help enterprise clients grow rapidly.",
       websiteUrl: "https://maxitech.com/",
       responsibilities: [
-        "Developed a web application using React, Remix.js.",
-        "Implemented Tailwind for styling",
-        "Utilized Storybook for developing, testing, and documenting reusable components",
-        "Integrated Framer Motion for smooth animations and transitions",
+        "Developed the web application with React and Remix",
+        "Implemented a utility-first styling approach with TailwindCSS",
+        "Built, tested and documented reusable components in Storybook",
+        "Added smooth page transitions and micro-interactions with Framer Motion",
       ],
       technologies: [
         "React",
@@ -142,11 +168,11 @@ export const ME = {
       company: "Brew",
       url: "https://dod.com.tr/",
       description:
-        "Second-hand vehicles buying and selling platform that relates buying and selling cars.",
+        "Second-hand vehicle trading platform for buying and selling cars.",
       responsibilities: [
-        "Developed a dynamic and interactive frontend using Vue and Nuxt.js",
-        "Styled based on Ant Design",
-        "Used Storybook to develop, test, and document reusable components, making our codebase modular and easy to maintain",
+        "Developed the platform frontend with Vue and Nuxt.js",
+        "Built the UI on top of Ant Design, customizing components to match the brand's design system",
+        "Built, tested and documented reusable components in Storybook",
       ],
       technologies: ["Vue", "Nuxt.js", "Ant Design", "Storybook", "Less"],
     },
@@ -156,11 +182,11 @@ export const ME = {
       company: "Brew",
       url: "https://www.mobilet.com",
       description:
-        "Mobilet is a social discovery and sharing platform that redefines the ticket buying experience.",
+        "Social discovery and sharing platform that redefines the event ticket buying experience.",
       responsibilities: [
-        "Developed a dynamic and interactive frontend using React and Next.js",
-        "Used GraphQL for efficient data querying and manipulation between frontend and backend",
-        "Used Redux Toolkit for state management and data flow",
+        "Developed the platform frontend with React and Next.js",
+        "Consumed Hasura GraphQL APIs for querying and mutating event and ticket data",
+        "Managed application state and data flow with Redux Toolkit",
       ],
       technologies: ["React", "Next.js", "Redux Toolkit", "Hasura", "GraphQL"],
     },
@@ -236,7 +262,14 @@ export const ME = {
     "PrimeVue",
     "HeroUI",
     "Pinia",
-    "Websocket"
+    "Websocket",
+    "Java",
+    "Spring Boot",
+    "JPA / Hibernate",
+    "PostgreSQL",
+    "AWS (EC2, RDS, ALB)",
+    "Apache",
+    "Vercel"
   ],
   languages: [
     {
